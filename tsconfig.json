@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "esnext" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+		"noEmit": true /* Do not emit outputs; allow Babel to transform files. */,
+		"moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+		"strict": true /* Enable all strict type-checking options. */,
+		"esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+		"jsx": "react" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+		"baseUrl": "." /* Base directory to resolve non-absolute module names. */
+	},
+	"include": [
+		"src",
+		"types/*",
+	],
+}
