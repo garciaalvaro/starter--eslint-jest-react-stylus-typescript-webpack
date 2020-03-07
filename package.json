@@ -5,7 +5,6 @@
 	"scripts": {
 		"webpack:dev": "webpack --mode development --watch",
 		"webpack:prod": "webpack --mode production",
-		"prestart": "npm run webpack:prod",
 		"start": "npm run webpack:dev",
 		"preprod": "npm run test",
 		"prod": "npm run webpack:prod",
