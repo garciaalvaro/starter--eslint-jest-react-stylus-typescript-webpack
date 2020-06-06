@@ -13,7 +13,7 @@ export default {
 	// Output
 	output: {
 		path: path.join(__dirname, "dist"),
-		filename: "bundle.js"
+		filename: "bundle.js",
 	},
 
 	module: {
@@ -24,8 +24,8 @@ export default {
 				exclude: /node_modules/,
 				loader: "babel-loader",
 				resolve: {
-					extensions: [".tsx", ".ts", ".js", ".jsx"]
-				}
+					extensions: [".tsx", ".ts", ".js", ".jsx"],
+				},
 			},
 
 			// Stylus/CSS files
@@ -38,28 +38,28 @@ export default {
 						loader: "stylus-loader",
 						options: {
 							use: nib(),
-							import: "~nib/index.styl"
-						}
-					}
-				]
-			}
-		]
+							import: "~nib/index.styl",
+						},
+					},
+				],
+			},
+		],
 	},
 
 	plugins: [
 		// Extract CSS into its own file
 		new MiniCssExtractPlugin({
-			filename: "bundle.css"
+			filename: "bundle.css",
 		}),
 
 		// Add a banner with the project name and version
 		new BannerPlugin({
 			banner: `${name} | ${version} | ${license}`,
-			include: ["bundle.js", "bundle.css"]
-		})
+			include: ["bundle.js", "bundle.css"],
+		}),
 	],
 
 	optimization: {
-		minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()]
-	}
+		minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()],
+	},
 };
