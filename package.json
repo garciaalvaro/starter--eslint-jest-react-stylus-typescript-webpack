@@ -1,6 +1,6 @@
 {
 	"name": "starter--eslint-jest-react-stylus-typescript-webpack",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"description": "Starter project with the minimum configuration to begin development",
 	"scripts": {
 		"webpack:dev": "webpack --mode development --watch",
