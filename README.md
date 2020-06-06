@@ -29,4 +29,4 @@ Now the project should be ready. The following are the provided scripts:
 
 - `$ npm start` Start Webpack in development mode
 - `$ npm test` This will run type check, lint check, prettier check and Jest unit testing
-- `$ npm run prod` The tests will run first and if everything went correctly Webpack will bundle the production scripts/styles
+- `$ npm run build` The tests will run first and if everything went correctly Webpack will bundle the production scripts/styles
