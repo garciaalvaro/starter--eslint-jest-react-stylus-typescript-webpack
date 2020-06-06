@@ -1,15 +1,16 @@
 module.exports = {
 	parser: "@typescript-eslint/parser",
+	ignorePatterns: [".cache", "build", "dist", "node_modules", "public"],
 	extends: [
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"prettier/@typescript-eslint",
-		"plugin:prettier/recommended"
+		"plugin:prettier/recommended",
 	],
 	parserOptions: {
 		ecmaFeatures: {
-			jsx: true
-		}
+			jsx: true,
+		},
 	},
 	rules: {
 		"@typescript-eslint/explicit-function-return-type": "off",
@@ -21,7 +22,7 @@ module.exports = {
 	},
 	settings: {
 		react: {
-			version: "detect"
-		}
-	}
+			version: "detect",
+		},
+	},
 };
