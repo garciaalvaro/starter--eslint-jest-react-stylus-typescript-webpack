@@ -2,12 +2,15 @@
 	"name": "starter--eslint-jest-react-stylus-typescript-webpack",
 	"version": "1.0.0",
 	"description": "Starter project with the minimum configuration to begin development",
+	"author": "Alvaro Garcia",
+	"license": "MIT",
+	"private": true,
 	"scripts": {
 		"webpack:dev": "webpack --mode development --watch",
 		"webpack:prod": "webpack --mode production",
 		"start": "npm run webpack:dev",
-		"preprod": "npm run test",
-		"prod": "npm run webpack:prod",
+		"prebuild": "npm run test",
+		"build": "npm run webpack:prod",
 		"test": "npm run type-check && npm run lint && npm run prettier && jest",
 		"type-check": "tsc",
 		"jest": "jest --watch",
@@ -54,7 +57,5 @@
 		"typescript": "^3.9.5",
 		"webpack": "^4.43.0",
 		"webpack-cli": "^3.3.11"
-	},
-	"author": "Alvaro Garcia",
-	"license": "MIT"
+	}
 }
