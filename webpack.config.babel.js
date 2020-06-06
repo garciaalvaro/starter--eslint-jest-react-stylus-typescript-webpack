@@ -16,6 +16,14 @@ export default {
 		filename: "bundle.js",
 	},
 
+	// Alias
+	resolve: {
+		alias: {
+			// We can import from '@/components' thanks to this alias
+			"@": path.join(__dirname, "src"),
+		},
+	},
+
 	module: {
 		rules: [
 			// TypeScript/JavaScript files
