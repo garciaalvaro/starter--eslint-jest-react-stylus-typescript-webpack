@@ -6,16 +6,18 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"webpack:dev": "webpack --mode development --watch",
-		"webpack:prod": "webpack --mode production",
-		"start": "npm run webpack:dev",
-		"prebuild": "npm run test",
-		"build": "npm run webpack:prod",
-		"test": "npm run type-check && npm run lint && npm run prettier && jest",
-		"type-check": "tsc",
-		"jest": "jest --watch",
-		"lint": "eslint '**/*.{ts,tsx}'",
-		"prettier": "prettier --check '**/*.{ts,tsx}'"
+		"start": "npm run dev",
+		"prebuild": "npm run clean:dist && npm run test:types && npm run test:unit",
+		"build": "webpack --mode=production",
+		"clean:dist": "rm -rf dist",
+		"dev": "webpack --mode=development",
+		"test": "npm run test:types && npm run test:lint && npm run test:unit && npm run test:prettier",
+		"test:types": "tsc",
+		"test:lint": "eslint \"**/*.{js,ts,tsx}\"",
+		"test:prettier": "prettier --check \"**/*.{js,ts,tsx,json,html}\"",
+		"prettier": "prettier --write \"**/*.{js,ts,tsx,json,html}\"",
+		"test:unit": "jest",
+		"test:unit:watch": "jest --watch"
 	},
 	"dependencies": {
 		"@babel/core": "^7.12.10",
