@@ -8,7 +8,7 @@ This is a custom starter project with the minimum configuration to start develop
 - React
 - TypeScript
 - Stylus for the CSS
-- Jest and Enzyme configuration
+- Jest and Testing Library configuration
 - Eslint and Prettier configuration
 
 ---
