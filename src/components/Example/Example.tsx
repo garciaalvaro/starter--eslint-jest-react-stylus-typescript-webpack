@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from "react";
 
-import "./Example.styl";
+import styles from "./Example.styl";
 
 /**
  * Example component
  */
 export const Example: FunctionComponent = () => {
 	return (
-		<div id="example">
+		<h1 className={styles.container}>
 			starter--eslint-jest-react-stylus-typescript-webpack
-		</div>
+		</h1>
 	);
 };
