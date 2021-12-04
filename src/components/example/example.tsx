@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import styles from "./Example.styl";
+import styles from "./example.styl";
 
 /**
  * Example component
